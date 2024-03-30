@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEHUB: LOGIN -> SIGN UP</title>
+    <link rel="stylesheet" href="loginISignUp.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <div>
+                <img src="pexels-daniel-putzer-633409.jpg" alt="">
+                <h2>Code<b>HUB</b></h2>
+            </div>
+            <h1 onplaying="repeatingFunc" id="signup">SIGN UP</h1>
+            <p> <span>Hello and welcome fellow CODER<b>.</b></span><br>
+                Don't have an account? Create on one now and join us in creating great complex System Software and larn
+                all the tricks and hacks that make a great software developer.
+            </p>
+        </header>
+        <form action="Home.html">
+            <input type="text" name="first_name" id="firstnametxt" placeholder="ENTER YOUR FIRST NAME" required>
+            <input type="text" name="last_name" id="lastnametxt" placeholder="ENTER YOUR LAST NAME" required>
+            <div>
+                <input type="radio" name="gender" id="maleRadioButton" required>
+                <label for="maleRadioButton" id="malelbl">MALE</label>
+                <input type="radio" name="gender" id="femaleRadioButton" required>
+                <label for="femaleRadioButton" id="femalelbl">FEMALE</label>
+            </div>
+            <input type="phone" name="phone" id="phonetxt" pattern="[0-9]{3} [0-9]{4} [0-9]{3}" placeholder="[XXXX]-XXX-XXX" required>
+            <input type="email" name="email" id="emailtxt" placeholder="Someone@gmail.com" required>
+            <input onfocus="passwordStrengthChecker()" type="password" name="password" id="passwordtxt"
+                placeholder="ENTER YOUR PASSWORD" required>
+            <div class="passwordCheaker">
+                <div id="weakSymbol"></div>
+                <div id="mediumSymbol"></div>
+                <div id="strongSymbol"></div>
+                <label for="passwordCheaker" id="passwordlbl">PASSWORD STATUS</label>
+            </div>
+            <input type="password" name="confirm" id="confirmpasswordtxt" placeholder="ENTER YOUR PASSWORD" required>
+            <input type="submit" value="SIGN UP" id="signupButton">
+            <!-- <button onclick="log()">BUTTON</button> -->
+        </form>
+        <footer>
+            <p>Join us in making programming a fun and easy place for all, creating great systems, design, and much
+                more.</p>
+            <h4>Already have an account? <a href="loginSignIn.html">Sign In<b>.</b></a></h4>
+        </footer>
+    </main>
+    <script src="logo.js"></script>
+</body>
+
+</html>
